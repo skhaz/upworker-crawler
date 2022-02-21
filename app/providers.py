@@ -31,10 +31,7 @@ def get_driver() -> webdriver.Chrome:
 
     executable_path = os.environ.get("CHROMEDRIVER_PATH", "chromedriver")
 
-    driver = webdriver.Chrome(
-        executable_path,
-        options=options,
-    )
+    driver = webdriver.Chrome(executable_path, options=options)
 
     stealth(
         driver,
