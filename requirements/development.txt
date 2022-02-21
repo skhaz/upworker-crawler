@@ -1,4 +1,5 @@
 -r tests.txt
+-r types.txt
 
 black==22.1.0
 flake8==4.0.1
