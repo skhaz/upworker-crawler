@@ -58,3 +58,19 @@ make run
 I tried to solve the reCAPTCHA using capmonster but had no luck, every time that a captcha was solved, the website shows again and again.
 
 And tests, more tests!
+
+### Using the API
+
+I am using HTTPie because is more simple than cURL JSON.
+
+Getting the name and surname of an user without OTP:
+
+``` shell
+http http://localhost:3000/v1/ username=username password=password secret_answer=secret
+```
+
+Getting the same information of an user with OTP:
+
+``` shell
+http http://localhost:3000/v1/ username=username password=password authenticator_secret_key="AAAA BBBB CCCC DDD"
+```
