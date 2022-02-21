@@ -2,7 +2,7 @@
 ## Goals
 
 * Docker for containerization, including Chrome and chromedriver
-* Flask for API with blueprints
+* Flask with blueprints for better code organization
 * Pydantic for models and input validation
 * Selenium Wire and Stealth for avoid website block
 * Mypy for typing check
