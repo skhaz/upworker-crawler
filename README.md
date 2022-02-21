@@ -11,6 +11,7 @@
 * Black for pep8 auto-format
 * Clean code
 * Makefile for common tasks
+* Retry in case of any error
 
 ### Running
 
