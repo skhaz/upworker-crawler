@@ -72,6 +72,10 @@ def fill_otp_password_and_continue(
 
 
 def get_fullname(wait: WebDriverWait) -> str:
+    button_xpath = "//*[@id='nav-right']/ul/li[9]/button"
+    button = wait.until(EC.visibility_of_element_located((By.XPATH, button_xpath)))
+    button.click()
+
     wait.until(EC.visibility_of_element_located((By.ID, "main")))
     xpath = "//*[@id='nav-right']/ul/li[9]/ul/li[2]/ul/li/a/div/div[1]"
     element = wait.until(EC.visibility_of_element_located((By.XPATH, xpath)))
