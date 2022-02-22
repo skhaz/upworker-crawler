@@ -17,13 +17,21 @@
 
 #### Build and run with docker
 
-Build:
+Using docker-compose:
+
+``` shell
+docker-compose up
+```
+
+Without docker-compose:
+
+Build
 
 ``` shell
 DOCKER_BUILDKIT=0 docker build --tag crawler:latest .
 ```
 
-Run:
+Run
 
 ``` shell
 docker run -p 3000:3000 -it crawler:latest
